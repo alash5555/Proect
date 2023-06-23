@@ -1,0 +1,244 @@
+
+.container-read {
+  width: 1280px;
+  margin: auto;
+  margin-top: 130px;
+}
+
+
+.read-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.read-text-cenre{
+  text-align: center;
+  margin-top: 50px;
+}
+.read-title {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  margin-bottom: 64px;
+
+}
+
+.read-min-img {
+  width: 397px;
+  height: 313px;
+}
+
+.read-min-text-1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4C4C4C;
+  margin-top: 20px;
+}
+
+.read-min-text-1>span {
+  color: #592EA9;
+
+}
+
+.read-min-title {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #232536;
+  margin-top: 20px;
+  width: 350px;
+  
+
+}
+
+.read-min-text-2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #232536;
+  opacity: 0.7;
+  margin-top: 10px;
+  width: 350px;
+
+}
+
+@media screen and (max-width:1280px) {
+  .container-read {
+      width: 1100px;
+  }
+
+  .read-min-img {
+      width: 320px;
+      height: 230px;
+  }
+
+  .read-min-title {
+      font-size: 22px;
+      line-height: 34px;
+      width: 320px;
+  }
+
+  .read-min-text-2 {
+      font-size: 15px;
+      line-height: 23px;
+      width: 320px;
+  }
+  .block-2-jonsn>h2 {
+      font-size: 46px;
+      line-height: 62px;
+  }
+}
+
+@media screen and (max-width:1160px) {
+  .container-read {
+      width: 900px;
+  }
+
+  .read-min-img {
+      width: 262px;
+      height: 194px;
+  }
+
+  .read-min-title {
+      font-size: 20px;
+      line-height: 28px;
+  }
+
+  .read-min-text-2 {
+      font-size: 13px;
+      line-height: 20px;
+  }
+
+  .block-2-jonsn>h2 {
+      font-size: 43px;
+      line-height: 57px;
+  }
+
+}
+
+@media screen and (max-width:980px) {
+  .container-read {
+      width: 600px;
+  }
+
+  .read-flex {
+      justify-content: space-around;
+  }
+
+  .read-min-block {
+      margin-top: 35px;
+  }
+}
+
+@media screen and (max-width:780px) {
+ 
+
+  .container-read {
+      width: 400px;
+  }
+
+  .read-min-text-1 {
+      text-align: center;
+  }
+
+  .read-min-title {
+      text-align: center;
+  }
+
+  .read-min-text-2 {
+      text-align: center;
+  }
+
+  .read-min-img {
+      width: 262px;
+      height: 160px;
+  }
+  .read-text-cenre{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width:680px) {
+
+  .blog-poste-li {
+      font-size: 14px;
+      line-height: 18px;
+  }
+
+  .read-title {
+      font-size: 25px;
+      margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width:480px) {
+  .container-read {
+      margin-top: 70px;
+  }
+
+  .read-min-img {
+      width: 224px;
+      height: 133px;
+  }
+
+  .read-flex {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+  }
+
+  .read-min-title {
+      font-size: 18px;
+      line-height: 24px;
+  }
+
+  .read-min-block {
+      text-align: center;
+  }
+}
+
+@media screen and (max-width:380px) {
+
+  .container-read {
+      width: 281px;
+  }
+
+  .read-min-img {
+      width: 177px;
+      height: 103px;
+  }
+
+  .read-min-text-1 {
+
+      font-size: 13px;
+      line-height: 4px;
+      margin-top: 20px;
+  }
+
+  .read-min-title {
+      font-size: 15px;
+      line-height: 19px;
+  }
+
+  .read-min-text-2 {
+      font-size: 10px;
+      line-height: 16px;
+  }
+
+
+}

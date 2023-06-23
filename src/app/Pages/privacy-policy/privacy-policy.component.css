@@ -1,0 +1,131 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.section_privacy{
+  background-color: #F4F0F8;
+}
+.container_privacy{
+  width: 800px;
+  padding: 90px 0px;
+  margin: auto;
+}
+.privacy_title{
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  letter-spacing: -2px;
+  color: #232536;
+  margin-bottom: 5px;
+}
+.privacy_text{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #232536;
+  opacity: 0.6;
+}
+.container_privacy_text {
+  width: 760px;
+  padding: 200px 0px 130px;
+  margin: auto;
+}
+.container_privacy_text > h2 {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #232536;
+  margin-bottom: 35px;
+}
+.container_privacy_text > h3 {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: #232536;
+  margin-bottom: 35px;
+
+}
+.container_privacy_text > p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #4C4C4C;
+  margin-bottom:50px;
+}
+
+@media screen and (max-width:980px) {
+  .container_privacy {
+    width: 400px;
+  }
+  .container_privacy_text {
+    width: 800px;
+    padding: 70px 0px 130px;
+    margin: auto;
+  }
+}
+@media screen and (max-width:880px) {
+  .container_privacy {
+    width: 400px;
+  }
+  .container_privacy_text {
+    width: 700px;
+    padding: 70px 0px 130px;
+    margin: auto;
+  }
+}
+@media screen and (max-width:780px) {
+  .container_privacy {
+    width: 400px;
+  }
+  .container_privacy_text {
+    width: 600px;
+    padding: 70px 0px 130px;
+    margin: auto;
+  }
+}
+@media screen and (max-width:680px) {
+  .container_privacy {
+    width: 400px;
+  }
+  .container_privacy_text {
+    width: 500px;
+    padding: 70px 0px 130px;
+    margin: auto;
+  }
+}
+@media screen and (max-width:580px) {
+  .container_privacy {
+    width: 400px;
+  }
+  .container_privacy_text {
+    width: 400px;
+    padding: 70px 0px 130px;
+    margin: auto;
+  }
+}
+@media screen and (max-width:480px) {
+  .container_privacy {
+    width: 300px;
+  }
+  .container_privacy_text {
+    width: 300px;
+    padding: 0px 0px 10px;
+    margin: auto;
+  }
+}
+

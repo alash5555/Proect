@@ -1,0 +1,36 @@
+<section class="section_business">
+  <div class="container_business">
+      <h2 class="business_title">Business</h2>
+      <p class="business_text-1">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+          eiusmod tempor incididunt ut labore.
+      </p>
+      <p class="business_text-2">Blog > Business</p>
+  </div>
+</section> 
+<section>
+  <div class="container_block_2">
+      <div class="block_2-1">
+        <div *ngFor="let item of PostArr">
+          <app-category-post [categoryPostInner]="item"></app-category-post>
+        </div>
+      </div>
+      <div class="block_2-2">
+          <div class="catagory-block-1">
+              <h2>Categories</h2>
+              <div *ngFor="let item of categoryArr">
+                <app-categori-min [categoriInner]="item"></app-categori-min>
+              </div>
+          </div>
+          <div class="catagory_all-tags">
+              <h2>All Tags</h2>
+              <div class="Alltags-flex" >
+                <div *ngFor="let item of allTagsArr">
+                    <app-all-tags [allTagsInner]="item"></app-all-tags>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+

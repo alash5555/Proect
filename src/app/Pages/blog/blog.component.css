@@ -1,0 +1,543 @@
+.section-post {
+  background-color: #F4F0F8;
+}
+
+.container-post {
+  width: 1280px;
+  margin: auto;
+  padding: 94px 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-title-1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.post-title-2 {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: #232536;
+  margin-bottom: 20px;
+}
+
+.post-text-1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4C4C4C;
+  margin-bottom: 20px;
+
+}
+
+.post-text-2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6D6E76;
+  margin-bottom: 20px;
+
+}
+
+.post-text-1>span {
+  color: #592EA9;
+}
+
+.post-button {
+  padding: 16px 48px;
+  background-color: #FFD050;
+  border: none;
+  margin-bottom: 20px;
+
+}
+
+.post-button>a {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 24px;
+  color: #232536;
+  text-decoration: none;
+}
+
+.container-all_post{
+    width: 1280px;
+    margin: auto;
+    padding-top: 64px;
+}
+.all_post-title {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2px;
+  color: #232536;
+  margin-bottom: 34px;
+
+}
+
+.border_bottom {
+  border-bottom: 2px solid #6D6E76;
+  margin-bottom: 63px;
+  opacity: 0.6;
+}
+
+.prev-next>a {
+  text-decoration: none;
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #6D6E76;
+  text-align: center;
+
+}
+.prev-next {
+  margin: 10px;
+}
+.prev-next>a:hover {
+  color: #232536;
+}
+.block-next-prev {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.catagory-title-2 {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: #232536;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.startup-button-2 {
+  padding: 16px 48px;
+  background-color: #FFD050;
+  margin-top: 20px;
+}
+
+.startup-button-2>a {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #232536;
+  text-decoration: none;
+}
+.catagory-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 130px;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1280px) {
+  .container-post {
+      width: 1100px;
+      flex-wrap: nowrap
+  }
+
+  .post-title-2 {
+      font-size: 30px;
+      line-height: 43px;
+      letter-spacing: -1px;
+  }
+
+
+  .post-text-2 {
+      font-size: 15px;
+      line-height: 26px;
+  }
+
+  .container-all_post {
+      width: 1100px;
+  }
+
+}
+
+@media screen and (max-width: 1180px) {
+  .container-post {
+      width: 1000px;
+  }
+
+  .container-all_post {
+      width: 1000px;
+  }
+
+  .post-img-block>img {
+      width: 430px;
+      height: 300px;
+  }
+
+  .post-title-2 {
+      font-size: 27px;
+      line-height: 37px;
+  }
+
+  .post-text-2 {
+      font-size: 14px;
+      line-height: 24px;
+  }
+
+  .min-block-all_post-img>img {
+      width: 400px;
+      height: 234px;
+  }
+
+  .all-post-min-title {
+      font-size: 34px;
+      line-height: 46px;
+  }
+
+  .min-block-all_post {
+      flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container-post {
+      width: 900px;
+  }
+
+  .container-all_post {
+      width: 900px;
+  }
+
+  .post-img-block>img {
+      width: 380px;
+      height: 263px;
+  }
+
+  .post-title-2 {
+      font-size: 25px;
+      line-height: 35px;
+  }
+
+  .post-title-1 {
+      font-size: 15px;
+      line-height: 20px;
+  }
+
+  .post-button {
+      padding: 13px 35px;
+  }
+
+  .all_post-title {
+      font-size: 44px;
+      margin-bottom: 27px;
+  }
+
+  .min-block-all_post-img>img {
+      width: 364px;
+      height: 219px;
+  }
+
+  .all-post-min-text-2 {
+      font-size: 14px;
+      line-height: 19px;
+  }
+
+  .all-post-min-title {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 15px;
+  }
+
+  .all-post-min-text-1 {
+      margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .container-post {
+      width: 800px;
+      align-items: stretch;
+  }
+
+  .container-all_post {
+      width: 800px;
+  }
+
+  .post-title-1 {
+      font-size: 15px;
+      line-height: 0px;
+  }
+
+  .post-title-2 {
+      font-size: 22px;
+      line-height: 32px;
+  }
+
+  .post-text-2 {
+      font-size: 12px;
+      line-height: 21px;
+  }
+
+  .post-img-block>img {
+      width: 349px;
+      height: 246px;
+  }
+
+  .post-button {
+      padding: 10px 26px;
+  }
+
+  .post-button>a {
+      font-size: 15px;
+  }
+
+  .all_post-title {
+      font-size: 38px;
+      margin-bottom: 21px;
+      text-align: center;
+  }
+
+  .min-block-all_post-img>img {
+      width: 329px;
+      height: 210px;
+  }
+
+  .all-post-min-text-2 {
+      font-size: 13px;
+      line-height: 19px;
+  }
+
+  .all-post-min-title {
+      font-size: 25px;
+      line-height: 32px;
+      margin-bottom: 15px;
+  }
+
+  .prev-next>a {
+      font-size: 22px;
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+
+  .container-post {
+      width: 500px;
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .post-text {
+      margin-top: 30px;
+      text-align: center;
+  }
+
+  .post-img-block>img {
+      width: 400px;
+      height: 261px;
+  }
+
+
+
+  .container-all_post {
+      width: 500px;
+
+  }
+
+  .min-block-all_post {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  .min-block-all_post-tetx {
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .catagory-title-2 {
+      font-size: 34px;
+      line-height: 17px;
+      text-align: center;
+      margin: 0px 0px 40px 0px;
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+
+  .container-post {
+      width: 380px;
+  }
+
+
+
+  .container-all_post {
+      width: 380px;
+  }
+
+  .post-img-block>img {
+      width: 300px;
+      height: 222px;
+  }
+
+  .post-title-2 {
+      font-size: 20px;
+      line-height: 27px;
+  }
+
+
+  .post-text-2 {
+      font-size: 14px;
+      line-height: 21px;
+  }
+
+  .all_post-title {
+      font-size: 33px;
+      margin-bottom: 0px;
+  }
+
+  .border_bottom {
+      margin-bottom: 50px;
+  }
+
+  .min-block-all_post-img>img {
+      width: 280px;
+      height: 180px;
+  }
+
+  .all-post-min-title {
+      font-size: 23px;
+      line-height: 30px;
+      margin-bottom: 21px;
+  }
+
+  .all-post-min-text-2 {
+      font-size: 11px;
+      line-height: 19px;
+  }
+
+  .catagory-title-2 {
+      font-size: 26px;
+      line-height: 16px;
+      text-align: center;
+      margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+
+  .container-post {
+      width: 300px;
+  }
+
+  .container-all_post {
+      width: 300px;
+  }
+
+  .post-img-block>img {
+      width: 250px;
+      height: 170px;
+  }
+
+  .post-title-2 {
+      font-size: 16px;
+      line-height: 22px;
+  }
+
+  .post-text-2 {
+      font-size: 12px;
+      line-height: 21px;
+  }
+
+  .post-button {
+      padding: 5px 19px;
+  }
+
+  .post-button>a {
+      font-size: 13px;
+  }
+
+  .min-block-all_post-img>img {
+      width: 219px;
+      height: 147px;
+  }
+
+  .all-post-min-text-1 {
+      margin-bottom: 14px;
+  }
+
+  .all-post-min-title {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 15px;
+      letter-spacing: -1px;
+  }
+
+  .all-post-min-text-2 {
+      font-size: 11px;
+      line-height: 19px;
+      letter-spacing: 2px;
+  }
+
+}
+
+@media screen and (max-width: 330px) {
+
+  .container-post {
+      width: 280px;
+  }
+
+  .container-all_post {
+      width: 280px;
+  }
+
+  .post-img-block>img {
+      width: 220px;
+      height: 155px;
+  }
+
+  .post-title-1 {
+      font-size: 13px;
+      line-height: 0px;
+  }
+
+  .post-title-2 {
+      font-size: 15px;
+      line-height: 22px;
+  }
+
+  .post-text-2 {
+      font-size: 11px;
+      line-height: 21px;
+  }
+
+}

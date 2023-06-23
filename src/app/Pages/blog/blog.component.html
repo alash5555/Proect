@@ -1,0 +1,49 @@
+<section class="section-post">
+  <div class="container-post">
+      <div class="post-text">
+          <p class="post-title-1">Featured Post</p>
+          <h2 class="post-title-2">Step-by-step guide to choosing great <br>
+              font pairs</h2>
+          <p class="post-text-1">By<span>John Doe </span> l May 23, 2022</p>
+          <p class="post-text-2">
+              Duis aute irure dolor in reprehenderit
+              in voluptate velit
+              esse cillum dolore eu fugiat <br>
+              nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident.
+          </p>
+          <button class="post-button">
+              <a href="#">Read More ></a>
+          </button>
+      </div>
+      <div class="post-img-block">
+          <img src="assets/images/blogPage/blog1.png" alt="image">
+      </div>
+  </div>
+</section>
+<section>
+  <div class="container-all_post">
+      <h2 class="all_post-title">All post</h2>
+      <div class="border_bottom"></div>
+        <div *ngFor="let item of allPost">
+            <app-all-ppost [AllPostInner]="item"></app-all-ppost>
+        </div>
+  </div>
+      <div class="block-next-prev">
+          <div class="prev-next"> <a routerLink="/leaut/home">&#60;Prev</a></div>
+          <div class="prev-next"><a routerLink="/leaut/blog-post">Next ></a></div>
+      </div>
+</section>
+<section>
+  <div class="container-5">
+      <h2 class="catagory-title-2">All Categories</h2>
+        <div class="catagory-block">
+            <div *ngFor="let item of categoryArr">
+                <app-categori [categoriInner]="item"></app-categori>
+            </div>
+        </div>
+  </div>
+</section>
+<section>
+    <app-join-now></app-join-now>
+</section>

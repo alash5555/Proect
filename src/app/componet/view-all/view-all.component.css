@@ -1,0 +1,42 @@
+.block-2-min_block {
+  padding: 33px 35px;
+}
+.block-2-min_block:hover{
+  background-color: #FBF6EA;
+}
+
+.block-2-jhon {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4C4C4C;
+  margin: 0px 0px 10px;
+}
+.block-2-min_b-text {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 32px;
+  color: #232536;
+}
+@media screen and (max-width: 1280px) {
+  .block-2-min_block {
+    padding: 33px 0px;
+  }
+}
+@media screen and (max-width: 1150px) {
+
+  .block-2-min_b-text{
+    font-size: 22px;
+    line-height: 26px;
+}
+}
+@media screen and (max-width: 760px) {
+  .block-2-min_block {
+      margin-bottom: 30px;
+  }
+}
+

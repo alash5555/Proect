@@ -1,0 +1,45 @@
+<section class="section_there">
+    <div class="container_there">
+      <div class="flex_there">
+        <div class="there_img">
+            <img src="../../../assets/images/authorPage/author.png" alt="image">
+          </div>
+          <div>
+            <div class="there_text_block">
+                    <h2 class="there_title">Hey there, I’m Andrew Jonhson  <br> and welcome to my Blog</h2>
+                    <p class="there_text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor <br>
+                        incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque <br>
+                        viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+                    </p>
+                    <div class="ahutors-link there_links">
+                    <a href="#">
+                        <img src="../../../assets/images/homePage/Vector.png" alt="image">
+                    </a>
+                    <a href="#">
+                        <img src="../../../assets/images/homePage/tviter.png" alt="image">
+                    </a>
+                    <a href="#">
+                        <img src="../../../assets/images/homePage/instagram.png" alt="image">
+                    </a>
+                    <a href="#">
+                        <img src="../../../assets/images/homePage/Group.png" alt="image">
+                    </a>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="color_block">
+                <div class="color_block-yellow"></div>
+                <div class="color_block-blue"></div>
+              </div>
+            </div>
+    </section>
+    <section>
+    <div class="container_my-post">
+        <h2 class="my-post-title">My Post</h2>
+        <div *ngFor="let item of ahutorPostArr">
+          <app-ahutor-post [ahutorPostDate]="item"></app-ahutor-post>
+        </div>
+    </div>
+  </section>

@@ -1,0 +1,132 @@
+<section>
+  <div class="container-about-us">
+      <div class="abut-us-text-block">
+          <div class="abut-us-text-1">
+              <h2>About us</h2>
+              <p>
+                  We are a team of <br>
+                  content writers who <br>
+                  share their learnings
+              </p>
+          </div>
+          <div class="abut-us-text-2">
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br>
+                  ad minim veniam, quis nostrud exercitation ullamco laboris nisi <br>
+                  ut aliquip ex ea commodo consequat.
+              </p>
+          </div>
+      </div>
+      <div class="about-us-block-img">
+          <div class="about-us-img">
+              <div class="about-block-position">
+                  <div class="about-us-img-text">
+                      <div class="about-us-img-text-1">
+                          <p>12+</p>
+                          <div>Blogs Published</div>
+                      </div>
+                      <div class="about-us-img-text-1">
+                          <p>18K+</p>
+                          <div>Views on Finsweet</div>
+                      </div>
+                      <div class="about-us-img-text-1">
+                          <p>30K+</p>
+                          <div>Total active Users</div>
+                      </div>
+                  </div>
+                  <span class="about-us-div-color"></span>
+                  <span></span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section>
+  <div class="container-mision">
+      <div class="mision-block-1">
+          <h2 class="mision-text-1">Our mision</h2>
+          <p class="mision-text-2">Creating valuable content for <br> creatives all around the world</p>
+          <p class="mision-text-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Non <br>
+              blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. <br>
+              At risus viverra adipiscing at in tellus.
+          </p>
+      </div>
+      <div class="mision-block-1">
+          <h2 class="mision-text-1">Our Vision</h2>
+          <p class="mision-text-2">A platform that empowers <br> individuals to improve</p>
+          <p class="mision-text-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Non <br>
+              blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. <br>
+              At risus viverra adipiscing at in tellus.
+          </p>
+      </div>
+  </div>
+</section>
+<section>
+  <div class="container-creativs">
+      <div class="creativs-block-1">
+          <div class="creativ-text-block">
+              <h2 class="creativ-text-block-title">
+                  Our team of creatives
+              </h2>
+              <p class="creativ-text-block-text-1">
+                  Lorem ipsum dolor sit amet, consectetur <br>
+                  adipiscing elit, sed do eiusmod tempor <br>
+                  incididunt.
+              </p>
+              <p class="creativ-text-block-text-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br>
+                  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br>
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
+                  in voluptate velit esse cillum dolore eu fugiat.
+              </p>
+          </div>
+          <div class="creativ-img-block">
+              <div class="creativ-bg-iamge"></div>
+          </div>
+      </div>
+
+
+      <div class="creativs-block-2">
+          <div class="creativ-text-block">
+              <h2 class="creativ-text-block-title">
+                  Why we started this Blog
+              </h2>
+              <p class="creativ-text-block-text-1">
+                  Lorem ipsum dolor sit amet, consectetur <br>
+                  adipiscing elit, sed do eiusmod tempor <br>
+                  incididunt.
+              </p>
+              <p class="creativ-text-block-text-2">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br>
+                  ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br>
+                  aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit <br>
+                  in voluptate velit esse cillum dolore eu fugiat.
+              </p>
+          </div>
+          <div class="creativ-img-block">
+              <div class="creativ-bg-iamge-2">
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="ahutors-section">
+  <div class="container-6">
+      <h2 class="ahutors-title">List of Authors</h2>
+      <div class="ahutors-flex">
+        <div *ngFor="let item of ahutorsArr">
+            <app-authors [authorsInner]="item"></app-authors>
+        </div>
+      </div>
+  </div>
+</section>
+<section>
+    <app-join-now></app-join-now>
+</section>

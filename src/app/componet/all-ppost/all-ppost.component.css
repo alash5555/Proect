@@ -1,0 +1,258 @@
+
+.container-all_post {
+  width: 1280px;
+  margin: auto;
+  padding-top: 64px;
+}
+.border_bottom {
+  border-bottom: 2px solid #6D6E76;
+  margin-bottom: 63px;
+  opacity: 0.6;
+}
+#min-block-all_post-tetx{
+    margin-left: 32px;
+}
+#min-block-all_post{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#all-post-min-text-1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #592EA9;
+  margin-bottom: 30px;
+}
+
+#all-post-min-title {
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  color: #232536;
+  margin-bottom: 29px;
+  width: 550px;
+}
+
+#all-post-min-text-2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #6D6E76;
+  width: 550px;
+}
+
+@media screen and (max-width: 1280px) {
+  .container-all_post {
+      width: 1100px;
+  }
+
+}
+
+@media screen and (max-width: 1180px) {
+  .container-all_post {
+      width: 1000px;
+  }
+
+  #min-block-all_post-img {
+      width: 400px;
+      height: 234px;
+  }
+
+  #all-post-min-title {
+      font-size: 34px;
+      line-height: 46px;
+  }
+
+  #min-block-all_post {
+      flex-wrap: nowrap;
+
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .container-all_post {
+      width: 900px;
+  }
+
+  #all_post-title {
+      font-size: 44px;
+      margin-bottom: 27px;
+  }
+
+  #min-block-all_post-img {
+      width: 364px;
+      height: 219px;
+  }
+
+  #all-post-min-text-2 {
+      font-size: 14px;
+      line-height: 19px;
+      width: 500px;
+
+  }
+
+  #all-post-min-title {
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 15px;
+      width: 500px;
+
+  }
+
+  #all-post-min-text-1 {
+      margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .container-all_post {
+      width: 800px;
+  }
+
+  #all_post-title {
+      font-size: 38px;
+      margin-bottom: 21px;
+  }
+
+  #min-block-all_post-img {
+      width: 329px;
+      height: 210px;
+  }
+
+  #all-post-min-text-2 {
+      font-size: 14px;
+      line-height: 19px;
+      width: 400px;
+  }
+
+  #all-post-min-title {
+      font-size: 25px;
+      line-height: 32px;
+      margin-bottom: 15px;
+      width: 400px;
+  }
+  .min_block_text{
+    margin-left: 0px;
+    width: 197px;
+}
+}
+
+@media screen and (max-width: 850px) {
+  #container-all_post {
+      width: 500px;
+
+  }
+
+  #min-block-all_post {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+  }
+
+  #min-block-all_post-tetx {
+      text-align: center;
+      margin-top: 20px;
+  }
+  #min-block-all_post-tetx{
+    margin-left: 0px;
+}
+}
+
+@media screen and (max-width: 540px) {
+  .container-all_post {
+      width: 380px;
+  }
+
+
+  .all_post-title {
+      font-size: 33px;
+      margin-bottom: 0px;
+  }
+
+  #border_bottom {
+      margin-bottom: 50px;
+  }
+
+  #min-block-all_post-img {
+      width: 280px;
+      height: 180px;
+  }
+
+  #all-post-min-title {
+      font-size: 23px;
+      line-height: 30px;
+      margin-bottom: 21px;
+  }
+
+  #all-post-min-text-2 {
+      font-size: 11px;
+      line-height: 19px;
+  }
+
+  #catagory-title-2 {
+      font-size: 26px;
+      line-height: 16px;
+      text-align: center;
+      margin-left: 0px;
+  }
+  
+}
+
+@media screen and (max-width: 430px) {
+
+  .container-all_post {
+      width: 300px;
+  }
+
+  #post-img-block>img {
+      width: 250px;
+      height: 170px;
+  }
+
+  #min-block-all_post-img {
+      width: 219px;
+      height: 147px;
+  }
+
+  #all-post-min-text-1 {
+      margin-bottom: 14px;
+  }
+
+  #all-post-min-title {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 15px;
+      letter-spacing: -1px;
+      width: 250px;
+  }
+
+  #all-post-min-text-2 {
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 1px;
+      width: 250px;
+  }
+
+}
+
+@media screen and (max-width: 330px) {
+
+  .container-all_post {
+      width: 280px;
+  }
+}
