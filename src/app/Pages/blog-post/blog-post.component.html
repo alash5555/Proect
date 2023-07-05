@@ -111,10 +111,8 @@
 <section>
   <div class="container-read">
       <h2 class="read-title">What to read next</h2>
-      <div class="read-flex">
-          <div *ngFor="let item of readArr">
-            <app-read-next [readNextInner]="item" ></app-read-next>
-          </div>
+      <div>
+            <app-read-next></app-read-next>
       </div>
   </div>
 </section>

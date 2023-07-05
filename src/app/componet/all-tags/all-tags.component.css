@@ -8,6 +8,15 @@
   letter-spacing: -2px;
   color: #232536;
 }
+.Alltags-flex{
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: center;
+}
 .catagory_all-tags_min-block > h2{
   font-family: 'Sen';
   font-style: normal;

@@ -1,3 +1,7 @@
-<div class="catagory_all-tags_min-block">
-<h2>{{allTagsInner.text}}</h2>
+<div  class="Alltags-flex" >
+  <div *ngFor="let item of data">
+    <div class="catagory_all-tags_min-block">
+      <h2>{{item.text}}</h2>
+      </div>
+  </div>
 </div>

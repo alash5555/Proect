@@ -1,4 +1,8 @@
-<div class="block-2-min_block">
-  <p class="block-2-jhon">{{allPostInner.paragraph}}</p>
-  <p class="block-2-min_b-text">{{allPostInner.title}}</p>
+<a routerLink="/leaut/blog" class="roterLink">
+<div *ngFor="let item of data">
+  <div class="block-2-min_block">
+    <p class="block-2-jhon">{{item.paragraph}}</p>
+    <p class="block-2-min_b-text">{{item.title}}</p>
+  </div>
 </div>
+</a>

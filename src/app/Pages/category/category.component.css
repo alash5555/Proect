@@ -167,17 +167,6 @@
 .block_2-2{
   margin-left:60px ;
 }
-
-.Alltags-flex{
-  display: flex;
-  flex-direction: row;
-  width: 400px;
-  flex-wrap: wrap;
-  align-content: stretch;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 @media screen and (max-width: 1280px) {
   .container_business {
       width: 600px;

@@ -50,9 +50,7 @@
                   </div>
               </div>
               <div class="block-2-text">
-                  <div *ngFor="let item of viewPostArr">
-                    <app-view-all [allPostInner]="item"></app-view-all>
-                  </div>
+                    <app-view-all></app-view-all>
               </div>
           </div>
       </div>
@@ -77,7 +75,7 @@
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <div class="aboutus-read">
-                  <a href="#">Read more</a>
+                  <a routerLink="leaut/about-us">Read more</a>
               </div>
           </div>
           <div class="block-aboutus">
@@ -99,10 +97,8 @@
 <section>
   <div class="container-5">
       <h2 class="catagory-title">Choose A Catagory</h2>
-      <div class="catagory-block">
-            <div  *ngFor="let item of categoryArr">
-                <app-categori [categoriInner]="item"></app-categori>
-            </div>
+      <div>
+            <app-categori></app-categori>
       </div>
   </div>
 </section>
@@ -133,10 +129,8 @@
 <section class="ahutors-section">
   <div class="container-6">
       <h2 class="ahutors-title">List of Authors</h2>
-      <div  class="ahutors-flex" >
-        <div *ngFor="let item of ahutorsArr">
-            <app-authors [authorsInner]="item"></app-authors>
-      </div>
+      <div>
+            <app-authors></app-authors>
       </div>
       <div>
           <div class="ahutors-block-links">

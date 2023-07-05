@@ -11,23 +11,17 @@
 <section>
   <div class="container_block_2">
       <div class="block_2-1">
-        <div *ngFor="let item of PostArr">
-          <app-category-post [categoryPostInner]="item"></app-category-post>
-        </div>
+          <app-category-post></app-category-post>
       </div>
       <div class="block_2-2">
           <div class="catagory-block-1">
               <h2>Categories</h2>
-              <div *ngFor="let item of categoryArr">
-                <app-categori-min [categoriInner]="item"></app-categori-min>
-              </div>
+                <app-categori-min></app-categori-min>
           </div>
           <div class="catagory_all-tags">
               <h2>All Tags</h2>
-              <div class="Alltags-flex" >
-                <div *ngFor="let item of allTagsArr">
-                    <app-all-tags [allTagsInner]="item"></app-all-tags>
-                  </div>
+              <div>
+                    <app-all-tags></app-all-tags>
               </div>
           </div>
       </div>

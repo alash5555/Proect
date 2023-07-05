@@ -1,0 +1,287 @@
+{
+  "allPost":[
+    {
+      "id": 1,
+      "paragraph": "By John Deo | Aug 23, 2021",
+     "title":" 8 Figma design systems that you can download for free today."
+    },
+    {
+      "id": 2,
+      "paragraph": "By John Deo | Aug 23, 2021",
+     "title": " 8 Figma design systems that you can download for free today."
+    },
+    {
+      "id": 3,
+      "paragraph": "By John Deo | Aug 23, 2021",
+      "title": " 8 Figma design systems that you can download for free today."
+    },
+    {
+      "id": 4,
+      "paragraph": "By John Deo | Aug 23, 2021",
+      "title": " 8 Figma design systems that you can download for free today."
+    }
+  ],
+  "category" : [
+    {
+      "id":1,
+      "img":"../../../assets/images/homePage/icons-3.png",
+      "title":"Business",
+      "paragraph":"lorem ipsum dolor sit amet,  consectetuer "
+    },
+    {
+      "id":2,
+      "img":"../../../assets/images/homePage/icons-4.png",
+      "title":"Startup",
+      "paragraph":"lorem ipsum dolor sit amet,  consectetuer "
+    },
+    {
+      "id":3,
+      "img":"../../../assets/images/homePage/icons-2.png",
+      "title":"Economy",
+      "paragraph":"lorem ipsum dolor sit amet,  consectetuer "
+    },
+    {
+      "id":4,
+      "img":"../../../assets/images/homePage/icons-1.png",
+      "title":"Technology",
+      "paragraph":"lorem ipsum dolor sit amet,  consectetuer "
+    }
+  ],
+  "ahutors":[
+    {
+      "id": 1,
+      "img": "assets/images/Authors/img-1.png",
+      "name": "Floyd Miles",
+      "paragraph": "Content Writer @Company",
+      "icon1": "assets/images/Authors/A-icon-1.png",
+      "icon2": "assets/images/Authors/A-icon-2.png",
+      "icon3": "assets/images/Authors/A-icon-3.png",
+      "icon4": "assets/images/Authors/A-icon-4.png"
+    },
+    {
+      "id": 2,
+      "img": "assets/images/Authors/img-2.png",
+      "name": "Dianna Rusel",
+      "paragraph": "Content Writer @Company",
+      "icon1": "assets/images/Authors/A-icon-1.png",
+      "icon2": "assets/images/Authors/A-icon-2.png",
+      "icon3": "assets/images/Authors/A-icon-3.png",
+      "icon4": "assets/images/Authors/A-icon-4.png"
+    },
+    {
+      "id": 3,
+      "img": "assets/images/Authors/img-3.png",
+      "name": "Jenny Wilson",
+      "paragraph": "Content Writer @Company",
+      "icon1": "assets/images/Authors/A-icon-1.png",
+      "icon2": "assets/images/Authors/A-icon-2.png",
+      "icon3": "assets/images/Authors/A-icon-3.png",
+      "icon4": "assets/images/Authors/A-icon-4.png"
+    },
+    {
+      "id": 4,
+      "img": "assets/images/Authors/img-4.png",
+      "name": "Leslie Alexander",
+      "paragraph": "Content Writer @Company",
+      "icon1": "assets/images/Authors/A-icon-1.png",
+      "icon2": "assets/images/Authors/A-icon-2.png",
+      "icon3": "assets/images/Authors/A-icon-3.png",
+      "icon4": "assets/images/Authors/A-icon-4.png"
+    },
+    {
+      "id": 5,
+      "img": "assets/images/repeatImages/user-33.png",
+      "name": "Guy Hawkins",
+      "paragraph": "Content Writer @Company",
+      "icon1": "assets/images/Authors/A-icon-1.png",
+      "icon2": "assets/images/Authors/A-icon-2.png",
+      "icon3": "assets/images/Authors/A-icon-3.png",
+      "icon4": "assets/images/Authors/A-icon-4.png"
+    },
+    {
+      "id": 6,
+      "img": "assets/images/repeatImages/user-2.png",
+      "name": "Guy Hawkins",
+      "paragraph": "Content Writer @Company",
+      "icon1": "assets/images/Authors/A-icon-1.png",
+      "icon2": "assets/images/Authors/A-icon-2.png",
+      "icon3": "assets/images/Authors/A-icon-3.png",
+      "icon4": "assets/images/Authors/A-icon-4.png"
+    },
+    {
+      "id": 7,
+      "img": "assets/images/repeatImages/user-22.png",
+      "name": "Robert Fox",
+      "paragraph": "Content Writer @Company",
+      "icon1": "assets/images/Authors/A-icon-1.png",
+      "icon2": "assets/images/Authors/A-icon-2.png",
+      "icon3": "assets/images/Authors/A-icon-3.png",
+      "icon4": "assets/images/Authors/A-icon-4.png"
+    },
+    {
+      "id": 8,
+      "img": "assets/images/repeatImages/user-11.png",
+      "name": "Robert Fox",
+      "paragraph": "Content Writer @Company",
+      "icon1": "assets/images/Authors/A-icon-1.png",
+      "icon2": "assets/images/Authors/A-icon-2.png",
+      "icon3": "assets/images/Authors/A-icon-3.png",
+      "icon4": "assets/images/Authors/A-icon-4.png"
+    }
+  ],
+  "post":[
+    {
+      "id":1,
+      "img":"assets/images/repeatImages/blog2.png",
+      "title":"Startup",
+      "name":"Design tips for designers that cover everything you need",
+      "paragraph": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident."      
+    },
+    {
+      "id":"2",
+      "img":"assets/images/repeatImages/blog3.png",
+      "title":"BUSINESS",
+      "name":"How to build rapport with your web  design clients",
+      "paragraph": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident."       
+    },
+    {
+      "id":3,
+      "img":"assets/images/repeatImages/blog4.png",
+      "title":"Startup",
+      "name":"Logo design trends to avoid in 2022",
+      "paragraph": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident."       
+    },
+    {
+      "id":4,
+      "img":"assets/images/blogPage/blog5.png",
+      "title":"TECHNOLOGY",
+      "name":"Font sizes in UI design: The complete  guide to follow",
+      "paragraph": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident."     
+    },
+    {
+      "id":5,
+      "img":"assets/images/repeatImages/blog2.png",
+      "title":"ECONOMY",
+      "name":"Font sizes in UI design: The complete  guide to follow",
+      "paragraph": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident."     
+    }
+  ],
+  "readNext":[
+    {
+      "id":1,
+      "img": "assets/images/cotegoryPage/blog2.png",
+      "title": "By John Doe l Aug 23, 2021",
+      "name":"A UX Case Study Creating a  Studious Environment for  Students",
+      "paragraph":"Duis aute irure dolor in reprehenderit in voluptate < velit essecillumdolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat nonproident."
+    },
+    {
+      "id":2,
+      "img": "assets/images/repeatImages/blog3.png",
+      "title": "By John Doe l Aug 23, 2021",
+      "name":"A UX Case Study Creating a  Studious Environment for  Students",
+      "paragraph":"Duis aute irure dolor in reprehenderit in voluptate < velit essecillumdolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat nonproident."
+    }
+    ,
+    {
+      "id":3,
+      "img": "assets/images/repeatImages/blog4.png",
+      "title": "By John Doe l Aug 23, 2021",
+      "name":"A UX Case Study Creating a  Studious Environment for  Students",
+      "paragraph":"Duis aute irure dolor in reprehenderit in voluptate < velit essecillumdolore eu fugiat nulla pariatur.  Excepteur sint occaecat cupidatat nonproident."
+    }
+  ],
+  "PostCategory":[
+    {
+      "id":1,
+      "img":"assets/images/repeatImages/blog2.png",
+      "title":"Business",
+      "paragraph":"Top 6 free website mockup tools  2022",
+      "text":"  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+    },
+    {
+      "id":2,
+      "img":"assets/images/repeatImages/blog2.png",
+      "title":"Business",
+      "paragraph":"Step-by-step guide to choosing great font pairs",
+      "text":"  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+    },
+    {
+      "id":3,
+      "img":"assets/images/repeatImages/blog2.png",
+      "title":"Business",
+      "paragraph":"Ten free foogle fonts that you should use",
+      "text":"  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+    },
+    {
+      "id":4,
+      "img":"assets/images/repeatImages/blog2.png",
+      "title":"Business",
+      "paragraph":"What did I learn from doing 50+ design sprints?",
+      "text":"  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec."
+    }
+  ],
+  "categoryMin":[
+    {
+      "id":1,
+      "img":"assets/images/homePage/icons-3.png",
+      "title":"Business"
+    },
+    {
+      "id":2,
+      "img":"assets/images/homePage/icons-4.png",
+      "title":"Startup"
+    },
+    {
+      "id":3,
+      "img":"assets/images/homePage/icons-2.png",
+      "title":"Economy"
+    },
+    {
+      "id":4,
+      "img":"assets/images/homePage/icons-1.png",
+      "title":"Technology"
+    }
+  ],
+   "allTags":[
+    {
+      "id":1,
+      "text":"Business"
+    },
+    {
+      "id":2,
+      "text":"Experience"
+    },
+    {
+      "id":3,
+      "text":"Screen"
+    },
+    {
+      "id":4,
+      "text":"Technology"
+    },
+    {
+      "id":5,
+      "text":"Marketing"
+    },
+    {
+      "id":6,
+      "text":"Life"
+    }
+  ],
+  "ahutorPost":[
+    {
+      "id":1,
+      "img":"../../../assets/images/My-Post/my-post-img-1.png",
+      "name":"BUSINESS",
+      "title":"Font sizes in UI design:  The complete guide to follow",
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmodtemporincididunt ut labore et dolore magna aliqua."
+    },
+    {
+      "id":2,
+      "img":"../../../assets/images/My-Post/my-post-img-2.png",
+      "name":"ECONOMY",
+      "title":"How to build rapport with  your web design clients",
+      "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmodtemporincididunt ut labore et dolore magna aliqua."
+    }
+  ]
+}

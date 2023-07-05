@@ -1,11 +1,15 @@
-<div class="block_2-1_min_block">
+
+<div *ngFor="let item of data">
+  <div class="block_2-1_min_block">
     <div>
-      <img class="min_block_img" src={{categoryPostInner.img}} alt="image">
+      <img class="min_block_img" src={{item.img}} alt="image">
     </div> 
     <div class="min_block_text">
-      <h3>{{categoryPostInner.title}}</h3>
-      <p>{{categoryPostInner.paragraph}}</p>
-      <div>{{categoryPostInner.text}}</div>
+      <h3>{{item.title}}</h3>
+      <p>{{item.paragraph}}</p>
+      <div>{{item.text}}</div>
     </div>
+  </div>
 </div>
+
 

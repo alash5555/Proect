@@ -20,6 +20,9 @@
     align-items: center;
     margin-bottom: 60px;
 }
+.roterLink{
+    text-decoration: none;
+}
 
 #all-post-min-text-1 {
   font-family: 'Inter';

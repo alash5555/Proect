@@ -2,7 +2,7 @@
 import { PrivacyPolicyComponent } from './Pages/privacy-policy/privacy-policy.component'
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeadrComponent } from './Leaut/headr/headr.component';
 import { LeautComponent } from './Leaut/leaut/leaut.component';
@@ -95,7 +95,8 @@ const route:Route[]=[
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(route)
+    RouterModule.forRoot(route),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

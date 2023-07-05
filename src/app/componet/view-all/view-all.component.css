@@ -4,7 +4,9 @@
 .block-2-min_block:hover{
   background-color: #FBF6EA;
 }
-
+.roterLink{
+  text-decoration: none;
+}
 .block-2-jhon {
   font-family: 'Inter';
   font-style: normal;

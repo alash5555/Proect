@@ -24,11 +24,9 @@
 <section>
   <div class="container-all_post">
       <h2 class="all_post-title">All post</h2>
-      <div class="border_bottom"></div>
-        <div *ngFor="let item of allPost">
-            <app-all-ppost [AllPostInner]="item"></app-all-ppost>
+        <div class="border_bottom"></div>
+            <app-all-ppost></app-all-ppost>
         </div>
-  </div>
       <div class="block-next-prev">
           <div class="prev-next"> <a routerLink="/leaut/home">&#60;Prev</a></div>
           <div class="prev-next"><a routerLink="/leaut/blog-post">Next ></a></div>
@@ -37,10 +35,8 @@
 <section>
   <div class="container-5">
       <h2 class="catagory-title-2">All Categories</h2>
-        <div class="catagory-block">
-            <div *ngFor="let item of categoryArr">
-                <app-categori [categoriInner]="item"></app-categori>
-            </div>
+        <div>
+            <app-categori></app-categori>
         </div>
   </div>
 </section>
