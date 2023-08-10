@@ -1,0 +1,73 @@
+<div  class="block-1">
+  <div class="block-1-contener">
+    <button class="button-circle" (click)="drawer.toggle() "(click)="toggle()"><p class="circle"[ngStyle]="bol === true ? {'padding': ' 0px 0px 0px 0px'} : {}">⚫</p></button>
+    <div class="nav-block">
+      <nav class="nav-section">
+          <label for="oppen-menyu">
+              <img  class="oppen-menyu-img" src="../../../assets/images/Fotor/Logo.png" alt="image" >
+          </label>
+      </nav>
+  </div>
+    <div>
+      <img src="../../../assets/images/admin/image-hac.png" class="admin-img" alt="image">
+    </div>
+  </div>
+</div>
+<mat-drawer-container class="example-container ">
+  <mat-drawer #drawer class="fotore" [mode]="mode.value"  style="margin-left: 0px">
+    <div class="components-links">
+      <div>
+        <a  class="foter-link" routerLink="all-post">All Posts </a>
+      </div>
+      <div>
+        <a href="" class="foter-link" routerLink="category">Category</a>
+      </div>
+      <div>
+        <a href="" class="foter-link" routerLink="ahutors">Authors</a>
+      </div>
+      <div>
+        <a href="" class="foter-link" routerLink="read-Next">Read Next</a>
+      </div>
+      <div>
+        <a href="" class="foter-link" routerLink="Know-next">Know More</a>
+      </div>
+      <div>
+        <a href="" class="foter-link" routerLink="category-post">C All Posts</a>
+      </div>
+      <div>
+        <a href="" class="foter-link" routerLink="category-min">Min Category</a>
+      </div>
+      <div>
+        <a href="" class="foter-link" routerLink="category-All-tags">All Tags</a>
+      </div>
+      <div>
+        <a href="" class="foter-link" routerLink="ahutors-post">Author Posts</a>
+      </div>
+      <div>
+        <a href="" class="foter-link" (click)="exit()"><img src="../../../assets/images/admin/logout.png" alt=""></a>
+      </div>
+  </div>
+  </mat-drawer>
+  <mat-drawer-content>
+  <div class="oppen-menyu-block">
+    <input type="checkbox" id="oppen-menyu" hidden>
+    <div class="nav-oppen-menyu">
+      <div class="nav-oppen-f">
+        <div class="nav-text"><a routerLink="">Home</a></div>  
+        <div class="nav-text"><a routerLink="/blog">Blog</a></div>
+        <div class="nav-text"><a routerLink="/about-us">About us</a></div>
+        <div class="nav-text"><a routerLink="/contact-us">Contact us</a></div>
+        <div class="nav-text"><a routerLink="/blog">Blog</a></div>
+        <div class="nav-text"><a routerLink="/blog-post/1">Blog-Post</a></div>
+      </div>
+  </div>
+  </div>
+  <div class="children-block">
+    <router-outlet></router-outlet>
+  </div>
+    <mat-form-field style="display: none;">
+      <mat-select #mode value="side">
+      </mat-select>
+    </mat-form-field>
+  </mat-drawer-content>
+</mat-drawer-container>

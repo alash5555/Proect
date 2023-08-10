@@ -1,8 +1,8 @@
-<a routerLink="/leaut/blog" class="roterLink">
 <div *ngFor="let item of data">
+  <a [routerLink]="['/blog-post', item.id]" class="roterLink">
   <div class="block-2-min_block">
-    <p class="block-2-jhon">{{item.paragraph}}</p>
+  <p class="block-2-jhon">by  <span>  {{item.name}}</span>    {{item.data}}</p>
     <p class="block-2-min_b-text">{{item.title}}</p>
   </div>
-</div>
 </a>
+</div>

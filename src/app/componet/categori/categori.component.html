@@ -1,10 +1,12 @@
-<div class="catagory-block">
-  <div *ngFor="let item of data">
-    <a  routerLink="/leaut/category" class="catagory-min-block-1">
-      <img class="catagory-min-block-icons-1" src={{item.img}} alt="iamges">
-      <h3 class="catagory-min-block-title">  {{item.title}}</h3>
-      <p  class="catagory-min-block-text">{{item.paragraph}}</p>
-    </a>
-  </div>
+<div class="catagory-block" >
+  <div *ngFor="let item of data" >
+    <div *ngIf="data && data.length > 0">
+        <a  [routerLink]="['/category', item.id]" class="catagory-min-block-1">
+          <img class="catagory-min-block-icons-1" src={{item.img}} alt="iamges">
+          <h3 class="catagory-min-block-title">  {{item.title}}</h3>
+          <p  class="catagory-min-block-text">{{item.paragraph}}</p>
+        </a>
+      </div>
+    </div>
 </div>
 

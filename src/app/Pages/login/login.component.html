@@ -1,0 +1,18 @@
+<div class="login-bg">
+  <div class="login-block-1">
+    <img src="../../../assets/images/admin/Group.png" alt="">
+  </div>
+  <div class="login-block-2">
+    <h2 class="login-title">Welcome to</h2>
+    <h2 class="login-title-2">Finsweet</h2>
+    <form [formGroup]="form" class="form">
+      <div>
+        <input class="input" formControlName="email" type="email" placeholder="Email" >
+      </div>
+      <div>
+         <input  class="input" formControlName="password" type="password" placeholder="Password">
+      </div>
+      <button (click)="login()" [disabled]="form.invalid">Login</button>
+    </form>
+  </div>
+</div>

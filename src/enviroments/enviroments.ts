@@ -18,5 +18,12 @@ export const enviroments = {
     },
     ahutors:{
         ahutorsPost:http +"/ahutorPost"
+    },
+    aboutUs:{
+      aboutPost:http + "/aboutPost"
+    },
+    contact:{
+      usersData:http + "/userData"
     }
+
 }

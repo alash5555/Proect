@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Category } from 'src/app/Models/categori';
 import { CategoryPost } from 'src/app/Models/categoryPost';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
@@ -8,6 +9,7 @@ import { enviroments } from 'src/enviroments/enviroments';
   styleUrls: ['./category-post.component.css']
 })
 export class CategoryPostComponent implements OnInit {
+  @Input() categoryDate!: Category
   @Input()categoryPostInner!: CategoryPost
   url:string = enviroments.category.PostCategory;
   data: CategoryPost[] = []
@@ -17,6 +19,5 @@ export class CategoryPostComponent implements OnInit {
       this.data = data
     })
   }
-
   
 }

@@ -8,7 +8,6 @@ import { enviroments } from 'src/enviroments/enviroments';
   styleUrls: ['./ahutor-post.component.css']
 })
 export class AhutorPostComponent {
-  @Input() ahutorPostDate!: AhutorPost;
   url:string = enviroments.ahutors.ahutorsPost;
   data:AhutorPost[] = [];
   constructor(public servisr: RequestService){}

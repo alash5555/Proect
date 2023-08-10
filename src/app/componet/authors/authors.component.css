@@ -55,7 +55,6 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 90px;
 }
 
 .ahutors-min-img {
@@ -67,10 +66,11 @@
   background: #F4F4F4;
   width: 295px;
   padding: 40px 0px;
-  transition: 1s;
   margin-top: 20px;
   text-decoration: none;
   display: block;
+  transition: 0.7s;
+
 }
 
 .ahutors-min-block:hover {

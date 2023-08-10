@@ -1,28 +1,21 @@
-
-
-<div class="ahutors-flex">
-    
-<div *ngFor="let item of data">
-    <a  routerLink="/leaut/ahutor" class="ahutors-min-block">
+ <a  [routerLink]="['/ahutor', ahutorsInner.id]" class="ahutors-min-block">
         <div class="ahutors-min-img">
-        <img src="{{item.img}}" alt="Image">
+            <img src="{{ahutorsInner.img}}" alt="Image">
         </div>
-        <h3 class="ahutors-min-title">{{item.name}}</h3>
-        <p class="ahutors-min-text">{{item.paragraph}}</p>
+        <h3 class="ahutors-min-title">{{ahutorsInner.name}}</h3>
+        <p class="ahutors-min-text">{{ahutorsInner.paragraph}}</p>
         <div class="ahutors-link">
             <a href="#">
-                <img src="{{item.icon1}}" alt="icons" class="">
+                <img src="{{ahutorsInner.icon1}}" alt="icons" class="">
             </a>
             <a href="#">
-                <img src="{{item.icon2}}" alt="icons" class="">
+                <img src="{{ahutorsInner.icon2}}" alt="icons" class="">
             </a>
             <a href="#">
-                <img src="{{item.icon3}}" alt="icons" class="">
+                <img src="{{ahutorsInner.icon3}}" alt="icons" class="">
             </a>
             <a href="#">
-                <img src="{{item.icon4}}" alt="icons" class="">
-            </a>
-        </div>
-      </a>
+            <img src="{{ahutorsInner.icon4}}" alt="icons" class="">
+        </a>
     </div>
-</div>
+</a>

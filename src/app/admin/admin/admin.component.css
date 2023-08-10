@@ -1,0 +1,132 @@
+.example-container {
+  height: 100vh;
+  border: none;
+}
+
+.mat-drawer-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.circle{
+  padding-left: 40px;
+  font-size: 14px;
+  box-sizing: border-box;
+  padding: 0px 0px 0px 26px ;
+  color: rgb(93, 93, 93);
+  margin: 0px 0px;
+  transition: 0.5s;
+}
+.button-circle{
+  box-sizing: border-box;
+  border-radius: 50px;
+  width: 50px;
+  text-align: left;
+  background-image: url(../../../assets/images/admin/bg-image.png);
+  background-size: 50px 20px;
+  border: 2px solid rgba(0, 0, 0, 0.482);
+  cursor: pointer;
+}
+.logo-f{
+  width: 110px;
+  height: 24px;
+  margin: 20px 0px;
+}
+.fotore{
+  background-color:  #111327;
+  width: 200px;
+  text-align: center;
+}
+.foter-link{
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-family: 'Sen';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  border-radius: 0%;
+  width: 150px;
+  height: 46px;
+  background-color: white;
+  margin: 10px 0px;
+  padding: 10px;
+}
+
+.components-links{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.block-1-contener{
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+}
+.block-1{
+  background-color:  #111327;
+
+}
+.admin-img{
+  width: 50px;
+  height: 60px;
+  cursor: pointer;
+}
+.oppen-menyu-img{
+  cursor: pointer;
+}
+#oppen-menyu:checked+.nav-oppen-menyu{
+  height: 0%;
+  display: block;
+}
+.nav-oppen-menyu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  text-align: center;
+  z-index: 1000;
+}
+.mat-drawer-content::-webkit-scrollbar{
+  display: none;
+}
+.nav-oppen-f {
+  background-color: #111327;
+  padding-bottom: 30px;
+}
+.nav-text>a {
+  text-decoration: none;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  color: white;
+}
+.nav-text {
+  margin-right: 40px;
+  display: inline;
+}
+.mat-drawer-content{
+  margin: 0px!important;
+  background-image: url(../../../assets/images/admin/iamge.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.mat-drawer-side {
+  border: none;
+}
+.children-block{
+  width: 1000px;
+  margin: auto;
+}

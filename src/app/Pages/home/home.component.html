@@ -75,7 +75,7 @@
                   eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
               <div class="aboutus-read">
-                  <a routerLink="leaut/about-us">Read more</a>
+                  <a routerLink="/leaut/about-us">Read more</a>
               </div>
           </div>
           <div class="block-aboutus">
@@ -130,7 +130,11 @@
   <div class="container-6">
       <h2 class="ahutors-title">List of Authors</h2>
       <div>
-            <app-authors></app-authors>
+            <div class="ahutors-flex">
+                <div *ngFor="let item of data" class="ahutors-flex">
+                    <app-authors [ahutorsInner]="item"></app-authors>
+                </div>
+            </div>
       </div>
       <div>
           <div class="ahutors-block-links">

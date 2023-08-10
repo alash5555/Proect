@@ -1,14 +1,17 @@
-<div *ngFor="let item of data">
-  <div class="my_post-min-block">
-    <div class="post-min-img">
-       <img src={{item.img}} alt="image">
+<div *ngFor="let item of data" >
+    <div>
+      <div class="my_post-min-block">
+        <div class="post-min-img">
+           <img src={{item.img}} alt="image">
+        </div>
+        <div class="post-min-text">
+          <p>{{item.name}}</p>
+          <h2>{{item.title}}</h2>
+          <span>{{item.text}}</span>
+        </div>
+      </div>
     </div>
-    <div class="post-min-text">
-      <p>{{item.name}}</p>
-      <h2>{{item.title}}</h2>
-      <span>{{item.text}}</span>
-    </div>
-  </div>
 </div>
+
 
 

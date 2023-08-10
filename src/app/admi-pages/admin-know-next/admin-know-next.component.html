@@ -1,0 +1,53 @@
+
+
+<div id="block">
+  <table class="d">
+    <tr>
+      <td class="button-add-block">
+        <button  (click)="post()" class="button-add" >Add</button>
+      </td>
+    </tr>
+    <tbody>
+      <tr>
+        <th>
+          <tr *ngFor="let item of data"> 
+            <th class="th-img">
+              <img src={{item.img}} alt="images" class="img-know">
+            </th>
+            <th class="th">
+             <textarea cols="10" class="td-text" rows="1">{{item.title}}</textarea>
+            </th>
+            <th>
+             <textarea cols="10" class="td-text" rows="5">{{item.text}}</textarea>
+            </th>
+            <td>
+             <textarea cols="10" class="td-text" rows="5">{{item.paragraph}}</textarea>
+            </td>
+            <td class="button">
+                <button (click)="delate(item.id)">❌</button>
+            </td>
+            <td class="button">
+              <button (click)="edit(item)">🖋️</button>
+            </td>
+          </tr>
+        </th>
+      </tr>
+    </tbody>
+    <tr>
+      <td class="td-form">
+          <div class="div-input" [ngStyle]="{'display' : bool ? 'flex' :'none'}">
+            <form [formGroup]=" form" (ngSubmit)="save(item?.id)">
+              <span (click)="colse()">X</span>
+              <input formControlName="title" type="text" placeholder={{item?.title}}>
+              <input formControlName="paragraph" type="text" placeholder={{item?.paragraph}}>
+              <input formControlName="text" type="text" placeholder={{item?.text}}>
+              <input type="text" disabled style="display: none;">
+              <button class="save-button">Save</button>
+              <input type="text" disabled style="display: none;">
+            </form>
+          </div>
+        </td>
+      </tr>
+    </table>
+</div>
+

@@ -1,12 +1,15 @@
-<a  routerLink="/leaut/blog-post" class="roterLink">
-  <div *ngFor="let item of data">
-    <div id="min-block-all_post">
-      <img  id="min-block-all_post-img" src={{item.img}} alt="image">
-      <div id="min-block-all_post-tetx">
-        <h3 id="all-post-min-text-1" >{{item.title}}</h3>
-        <h2 id="all-post-min-title">{{item.name}}</h2>
-        <p id="all-post-min-text-2">{{item.paragraph}}</p>
+
+<div *ngIf="data && data" >
+  <a *ngFor="let item of data" [routerLink]="['/blog-post', item.id ]" class="roterLink">
+    <div >
+      <div id="min-block-all_post">
+        <img  id="min-block-all_post-img" src={{item.img}} alt="image">
+        <div id="min-block-all_post-tetx">
+          <h3 id="all-post-min-text-1" >{{item.PostTitle}}</h3>
+          <h2 id="all-post-min-title">{{item.PostName}}</h2>
+          <p id="all-post-min-text-2">{{item.PostParagraph}}</p>
+        </div>
       </div>
     </div>
-  </div>
-</a>
+  </a>
+</div>

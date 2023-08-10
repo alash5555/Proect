@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Post } from 'src/app/Models/allPost';
-import { AllPost } from 'src/app/Models/viewAll';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
 @Component({
@@ -9,13 +9,12 @@ import { enviroments } from 'src/enviroments/enviroments';
   styleUrls: ['./view-all.component.css']
 })
 export class ViewAllComponent implements OnInit {
-  @Input() allPostInner!:AllPost;
-  url:string = enviroments.home.AllPost;
-  data:AllPost[] = [];
-  constructor(public service: RequestService ){}
-
+  constructor(public service: RequestService){}
+  @Input() allPostInner!:Post;
+  url:string = enviroments.blog.BlogPost;
+  data:Post[] = [];
   ngOnInit(): void {
-      this.service.getRequest<AllPost[]>(this.url).subscribe((data) => {
+      this.service.getRequest<Post[]>(this.url).subscribe((data) => {
       this.data = data  
   })
   }

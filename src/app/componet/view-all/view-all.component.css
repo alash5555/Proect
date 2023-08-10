@@ -1,6 +1,7 @@
 .block-2-min_block {
   padding: 33px 35px;
 }
+
 .block-2-min_block:hover{
   background-color: #FBF6EA;
 }
@@ -16,14 +17,18 @@
   color: #4C4C4C;
   margin: 0px 0px 10px;
 }
+.block-2-jhon > span{
+  color: #592ea9;
+}
 .block-2-min_b-text {
   font-family: 'Sen';
   font-style: normal;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 25px;
   line-height: 32px;
   color: #232536;
 }
+
 @media screen and (max-width: 1280px) {
   .block-2-min_block {
     padding: 33px 0px;

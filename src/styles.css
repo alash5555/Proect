@@ -30,7 +30,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 90px;
+  margin-bottom: 20px;
 }
 
 .ahutors-link {
@@ -176,3 +176,5 @@
   }
 
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

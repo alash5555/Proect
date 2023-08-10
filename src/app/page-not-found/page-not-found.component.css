@@ -1,0 +1,55 @@
+.block{
+  background-color: #0C091E;
+  background-image: url(../../assets/images/nodeFaund/img.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.block-text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+}
+.tag-404{
+  color: #D7D5E4;
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 128px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.page-not{
+  color: #9E9BB2;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.link-home{
+  display: block;
+  text-decoration: none;
+  color: #060124;
+  text-align: center;
+  font-style: normal;
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  background-color:#9E9BB2 ;
+  width: 150px;
+  margin-top: 40px;
+  padding: 15px 10px;
+}
+@media screen and (max-width: 1280px) {
+  .block{
+    height: 100%;
+  }
+}

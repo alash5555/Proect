@@ -1,0 +1,12 @@
+<div *ngFor="let item of data let i = index" >
+  <div class="creativs-block-1" [ngStyle]="{'flexDirection':i % 2 !==0 ? 'row-reverse': 'row'}">
+    <div class="creativ-text-block">
+        <h2 class="creativ-text-block-title">{{item.title}}</h2>
+        <p class="creativ-text-block-text-1">{{item.paragraph}}</p>
+        <p class="creativ-text-block-text-2">{{item.text}}</p>
+    </div>
+    <div class="creativ-img-block">
+        <img class="creativ-bg-iamge-2" src={{item.img}} alt="image">
+    </div>
+  </div>
+</div> 

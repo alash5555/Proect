@@ -109,7 +109,10 @@
 .post-min-text{
   margin-left: 30px;
 }
+.there_img > img {
+  width: 240px;
 
+}
 
 @media screen and (max-width:1120px){
   .container_there {

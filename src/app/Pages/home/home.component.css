@@ -240,7 +240,8 @@
 }
 
 .block-2-text {
-  padding: 0px 30px;
+  padding: 0px 20px;
+  
 }
 
 .about-color>div {
@@ -492,14 +493,12 @@
     font-size: 30px;
     margin-right: 10px;
     display: inline-block;
-    transition: 1s;
+    transition: 0.7s;
     color:  black;
 }
 .back:hover, .front:hover {
   background-color: #232536;
   color: white;
-  padding: 11px 16px;
-
 }
 
 .block-control {

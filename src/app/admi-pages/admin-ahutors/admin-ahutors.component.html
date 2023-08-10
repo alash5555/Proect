@@ -1,0 +1,75 @@
+<div id="block">
+  <table class="d">
+    <tr>
+      <td class="button-add-block">
+        <button  (click)="post()" class="button-add" >Add</button>
+      </td>
+    </tr>
+    <tbody>
+      <tr>
+        <th>
+          <tr *ngFor="let item of data"> 
+            <th class="ahutors-min-img">
+              <img class="img-1" src={{item.img}} alt="images">
+            </th>
+            <th class="th">
+              <textarea cols="10" class="td-text" disabled rows="1">{{item.name}}</textarea> 
+            </th>
+            <td>
+              <textarea cols="10" class="td-text" disabled rows="1">{{item.paragraph}}</textarea> 
+            </td>
+            <td class="td-ahutors">
+              <div class="ahutors-block-links">
+                <p class="ahutors-link">
+                  <a href="">
+                    <img src="{{item.icon1}}" alt="image">
+                  </a>
+                </p>
+                <p class="ahutors-link">
+                  <a href="">
+                    <img src="{{item.icon2}}" alt="image">
+                  </a>
+                </p>
+              <p class="ahutors-link">
+                <a href="">
+                   <img src="{{item.icon3}}" alt="image">
+                  </a>
+              </p>
+              <p class="ahutors-link">
+                <a href="">
+                  <img src="{{item.icon4}}" alt="image">
+                </a>
+              </p>
+            </div>
+            </td>
+            <td class="button">
+                <button (click)="delate(item.id)">❌</button>
+            </td>
+            <td class="button">
+              <button (click)="edit(item)">🖋️</button>
+            </td>
+          </tr>
+        </th>
+      </tr>
+    </tbody>
+    <tr>
+      <td class="td-form">
+          <div class="div-input" [ngStyle]="{'display' : bool ? 'flex' :'none'}">
+            <form [formGroup]=" form" (ngSubmit)="save(item?.id)">
+              <span class="button-close" (click)="colse()">x</span>
+              <input formControlName="name" type="text" placeholder={{item?.name}}>
+              <input formControlName="paragraph" type="text" placeholder={{item?.paragraph}}>
+              <input type="text" disabled style="display: none;">
+              <input type="text" disabled style="display: none;">
+              <input type="text" disabled style="display: none;">
+              <input type="text" disabled style="display: none;">
+              <input type="text" disabled style="display: none;">
+              <input type="text" disabled style="display: none;">
+              <button class="save-button">Save</button>
+            </form>
+          </div>
+        </td>
+      </tr>
+    </table>
+</div>
+

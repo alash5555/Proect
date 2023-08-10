@@ -1,17 +1,17 @@
 <section class="section_business">
   <div class="container_business">
-      <h2 class="business_title">Business</h2>
+      <h2 class="business_title">{{data.title}}</h2>
       <p class="business_text-1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
           eiusmod tempor incididunt ut labore.
       </p>
-      <p class="business_text-2">Blog > Business</p>
+      <p class="business_text-2">Blog > <span>{{data.title}}</span></p>
   </div>
 </section> 
 <section>
   <div class="container_block_2">
       <div class="block_2-1">
-          <app-category-post></app-category-post>
+          <app-category-post [categoryDate]="data"></app-category-post>
       </div>
       <div class="block_2-2">
           <div class="catagory-block-1">
