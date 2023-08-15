@@ -1,5 +1,6 @@
+import { NgFor, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Post } from 'src/app/Models/allPost';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
@@ -7,7 +8,10 @@ import { enviroments } from 'src/enviroments/enviroments';
 @Component({
   selector: 'app-admin-all-post',
   templateUrl: './admin-all-post.component.html',
-  styleUrls: ['./admin-all-post.component.css']
+  styleUrls: ['./admin-all-post.component.css'],
+  standalone:true,
+  imports:[ NgFor, NgStyle, ReactiveFormsModule] 
+
 })
 export class AdminPostComponent {
   constructor(public service: RequestService, public fb: FormBuilder){}

@@ -1,5 +1,6 @@
+import { NgFor, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { ReadNext } from 'src/app/Models/readNext';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
@@ -7,7 +8,9 @@ import { enviroments } from 'src/enviroments/enviroments';
 @Component({
   selector: 'app-admin-read-next',
   templateUrl: './admin-read-next.component.html',
-  styleUrls: ['./admin-read-next.component.css']
+  styleUrls: ['./admin-read-next.component.css'],
+  standalone:true,
+  imports:[ NgFor, NgStyle, ReactiveFormsModule] 
 })
 export class AdminReadNextComponent {
   constructor(public service: RequestService, public fb: FormBuilder){}

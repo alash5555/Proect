@@ -1,17 +1,16 @@
-import { style } from '@angular/animations';
-import { Component, OnInit, ViewChildren } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
-import { queueScheduler } from 'rxjs';
+import { NgFor, NgStyle } from '@angular/common';
+import { Component, OnInit,} from '@angular/core';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Category } from 'src/app/Models/categori';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
 
 @Component({
+  standalone:true,
   selector: 'app-admin-category',
   templateUrl: './admin-category.component.html',
-  styleUrls: ['./admin-category.component.css',
-]
-  
+  styleUrls: ['./admin-category.component.css'],
+  imports:[NgFor, NgStyle, ReactiveFormsModule]
 })
 
 export class AdminCategoryComponent  implements OnInit{

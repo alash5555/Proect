@@ -1,14 +1,17 @@
+import { NgFor, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { CategoryPost } from 'src/app/Models/categoryPost';
-import { CategoryPostComponent } from 'src/app/componet/category-post/category-post.component';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
 
 @Component({
   selector: 'app-admin-category-post',
   templateUrl: './admin-category-post.component.html',
-  styleUrls: ['./admin-category-post.component.css']
+  styleUrls: ['./admin-category-post.component.css'],
+  standalone:true,
+  imports:[ NgFor, NgStyle, ReactiveFormsModule] 
+
 })
 export class AdminCategoryPostComponent {
   constructor(public service: RequestService, public fb: FormBuilder){}

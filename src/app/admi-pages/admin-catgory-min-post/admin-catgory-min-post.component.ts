@@ -1,5 +1,6 @@
+import { NgFor, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { AllTags } from 'src/app/Models/allTags';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
@@ -7,7 +8,9 @@ import { enviroments } from 'src/enviroments/enviroments';
 @Component({
   selector: 'app-admin-catgory-min-post',
   templateUrl: './admin-catgory-min-post.component.html',
-  styleUrls: ['./admin-catgory-min-post.component.css']
+  styleUrls: ['./admin-catgory-min-post.component.css'],
+  standalone:true,
+  imports:[ NgFor, NgStyle,  ReactiveFormsModule] 
 })
 export class AdminCatgoryMinPostComponent {
   constructor(public service: RequestService, public fb: FormBuilder){}

@@ -4,28 +4,9 @@ import {  NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
-import { HeadrComponent } from './Leaut/headr/headr.component';
 import { LeautComponent } from './Leaut/leaut/leaut.component';
-import { FottofComponent } from './Leaut/fottof/fottof.component';
-import { HomeComponent } from './Pages/home/home.component';
-import { CategoriComponent } from './componet/categori/categori.component';
-import { AuthorsComponent } from './componet/authors/authors.component';
-import { JoinNowComponent } from './componet/join-now/join-now.component';
 import { Route, RouterModule } from '@angular/router';
-import { BlogComponent } from './Pages/blog/blog.component';
-import { AllPpostComponent } from './componet/all-ppost/all-ppost.component';
-import { BlogPostComponent } from './Pages/blog-post/blog-post.component';
-import { ReadNextComponent } from './componet/read-next/read-next.component';
-import { AboutUsComponent } from './Pages/about-us/about-us.component';
-import { ViewAllComponent } from './componet/view-all/view-all.component';
-import { CategoryComponent } from './Pages/category/category.component';
-import { CategoryPostComponent } from './componet/category-post/category-post.component';
-import { CategoriMinComponent } from './componet/categori-min/categori-min.component';
-import { AllTagsComponent } from './componet/all-tags/all-tags.component';
-import { AhutorComponent } from './Pages/ahutor/ahutor.component';
-import { AhutorPostComponent } from './componet/ahutor-post/ahutor-post.component';
 import { ContactComponent } from './Pages/contact/contact.component';
-import { AboutPostComponent } from './componet/about-post/about-post.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './Pages/login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -34,45 +15,37 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { AdminComponent } from './admin/admin/admin.component';
-import { AdminCategoryComponent } from './admi-pages/admin-category/admin-category.component';
-import { AdminAhutorsComponent } from './admi-pages/admin-ahutors/admin-ahutors.component';
-import { AdminReadNextComponent } from './admi-pages/admin-read-next/admin-read-next.component';
-import { AdminPostComponent } from './admi-pages/admin-all-post/admin-all-post.component';
-import { AdminKnowNextComponent } from './admi-pages/admin-know-next/admin-know-next.component';
-import { AdminCategoryPostComponent } from './admi-pages/admin-category-post/admin-category-post.component';
-import { AdminMinCategoryComponent } from './admi-pages/admin-min-category/admin-min-category.component';
-import { AdminCatgoryMinPostComponent } from './admi-pages/admin-catgory-min-post/admin-catgory-min-post.component';
-import { AdminAhutorPostComponent } from './admi-pages/admin-ahutor-post/admin-ahutor-post.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { authGuard } from './auth.guard';
 const route:Route[]=[
 
   {
     path:'',
-    component:  LeautComponent,
+    component:LeautComponent,
     children:[
       {
         path:"",
-        component: HomeComponent
+        loadChildren:() => import('./Pages/home/home.module').then(m => m.HomeModule)
       },
       {
         path:'blog',
-        component: BlogComponent
+        loadChildren:() => import('./Pages/blog/blog.module').then(m => m.BlogModule)
       },
       {
         path:'blog-post/:id',
-        component: BlogPostComponent
+        loadChildren:() => import('./Pages/blog-post/blog-post.module').then(m => m.BlogPostModule)
       },
       {
         path:"about-us",
-        component: AboutUsComponent
+        loadChildren:() =>  import('./Pages/about-us/abaut.module').then(m => m.AbautModule)
       },
       {
         path:"category/:id",
-        component:  CategoryComponent,
+        loadChildren:() => import('./Pages/category/category.module').then(m => m.CategoryModule)
       },
       {
         path:"ahutor/:id",
-        component:  AhutorComponent,
+        loadChildren: () => import('./Pages/ahutor/ahutor.module').then(m => m.AhutorModule)
       },
       {
         path:"contact-us",
@@ -91,42 +64,44 @@ const route:Route[]=[
   {
     path: "admin",
     component: AdminComponent,
+    canActivate:[authGuard],
     children:[
       {
         path:"category",
-        component:AdminCategoryComponent
+        loadChildren:() => import('./admi-pages/admin-category/admin-category.module').then(m => m.AdminCategoryModule)
       },
       {
         path:"ahutors",
-        component:AdminAhutorsComponent
+        loadChildren: () => import('./admi-pages/admin-ahutors/admin-ahutor.module').then(m => m.AdminAhutorModule)
       },
       {
         path:"read-Next",
-        component:AdminReadNextComponent
+        loadChildren: () => import('./admi-pages/admin-read-next/admin-read-next.module').then( m => m.AdminReadNextModule)
       },
       {
         path:"all-post",
-        component: AdminPostComponent
+        loadChildren: () => import('./admi-pages/admin-all-post/admin-all-post.module').then(m => m.AdminAllPostModule)
       },
       {
         path:"Know-next",
-        component: AdminKnowNextComponent
+        loadChildren:() => import('./admi-pages/admin-know-next/admin-know-next.module').then(m => m.AdminKnowNextModule)
       },
       {
         path:"category-post",
-        component:  AdminCategoryPostComponent
+        loadChildren: () => import('./admi-pages/admin-category-post/admin-category-post.module').then(m => m.AdminCategoryPostModule)
       },
       {
         path:"category-min",
-        component: AdminMinCategoryComponent
+        loadChildren: () => import('./admi-pages/admin-min-category/admin-category-min.module').then(m => m.AdminCategoryMinModule)
+        
       },
       {
         path:"category-All-tags",
-        component: AdminCatgoryMinPostComponent
+        loadChildren:() => import('./admi-pages/admin-catgory-min-post/admin-category-min-post-routing.module').then(m => m.AdminCategoryMinPostRoutingModule)
       },
       {
         path:"ahutors-post",
-        component: AdminAhutorPostComponent
+        loadChildren: () => import('./admi-pages/admin-ahutor-post/admin-ahutor-post.module').then(m => m.AdminAhutorPostModule)
       }
     ]
   },
@@ -139,40 +114,10 @@ const route:Route[]=[
 @NgModule({
   declarations: [
     AppComponent,
-    HeadrComponent,
-    LeautComponent,
-    FottofComponent,
-    HomeComponent,
-    CategoriComponent,
-    AuthorsComponent,
-    JoinNowComponent,
-    BlogComponent,
-    AllPpostComponent,
-    BlogPostComponent,
-    ReadNextComponent,
-    AboutUsComponent,
-    ViewAllComponent,
-    CategoryComponent,
-    CategoryPostComponent,
-    CategoriMinComponent,
-    AllTagsComponent,
-    AhutorComponent,
-    AhutorPostComponent,
     ContactComponent,
     PrivacyPolicyComponent,
-    AboutPostComponent,
     LoginComponent,
-    AdminComponent,
-    AdminCategoryComponent,
-    AdminAhutorsComponent,
-    AdminReadNextComponent,
-    AdminPostComponent,
-    AdminKnowNextComponent,
-    AdminCategoryPostComponent,
-    AdminMinCategoryComponent,
-    AdminCatgoryMinPostComponent,
-    AdminAhutorPostComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -183,7 +128,7 @@ const route:Route[]=[
     MatSidenavModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
+import { NgFor, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Authors } from 'src/app/Models/autorsh';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
@@ -7,7 +8,9 @@ import { enviroments } from 'src/enviroments/enviroments';
 @Component({
   selector: 'app-admin-ahutors',
   templateUrl: './admin-ahutors.component.html',
-  styleUrls: ['./admin-ahutors.component.css']
+  styleUrls: ['./admin-ahutors.component.css'],
+  standalone:true,
+  imports:[ NgFor, NgStyle, ReactiveFormsModule] 
 })
 export class AdminAhutorsComponent {
   constructor(public service: RequestService, public fb: FormBuilder){}

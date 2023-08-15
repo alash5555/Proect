@@ -55,7 +55,7 @@
     <tr>
       <td class="td-form">
           <div class="div-input" [ngStyle]="{'display' : bool ? 'flex' :'none'}">
-            <form [formGroup]=" form" (ngSubmit)="save(item?.id)">
+            <form [formGroup]="form" (ngSubmit)="save(item?.id)">
               <span class="button-close" (click)="colse()">x</span>
               <input formControlName="name" type="text" placeholder={{item?.name}}>
               <input formControlName="paragraph" type="text" placeholder={{item?.paragraph}}>

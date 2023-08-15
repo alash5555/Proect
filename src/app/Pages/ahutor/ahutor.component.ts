@@ -3,10 +3,13 @@ import { ActivatedRoute } from '@angular/router';
 import { Authors } from 'src/app/Models/autorsh';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
+import { AhutorPostComponent } from "../../componet/ahutor-post/ahutor-post.component";
 @Component({
-  selector: 'app-ahutor',
-  templateUrl: './ahutor.component.html',
-  styleUrls: ['./ahutor.component.css']
+    selector: 'app-ahutor',
+    templateUrl: './ahutor.component.html',
+    styleUrls: ['./ahutor.component.css'],
+    standalone: true,
+    imports: [AhutorPostComponent]
 })
 export class AhutorComponent  implements OnInit{
   url:string = enviroments.home.ahutors

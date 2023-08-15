@@ -1,5 +1,6 @@
+import { NgFor, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder,  FormGroup,  ReactiveFormsModule } from '@angular/forms';
 import { AhutorPost } from 'src/app/Models/ahutor-post';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
@@ -7,14 +8,16 @@ import { enviroments } from 'src/enviroments/enviroments';
 @Component({
   selector: 'app-admin-ahutor-post',
   templateUrl: './admin-ahutor-post.component.html',
-  styleUrls: ['./admin-ahutor-post.component.css']
+  styleUrls: ['./admin-ahutor-post.component.css'],
+  standalone:true,
+  imports:[ NgFor, NgStyle, ReactiveFormsModule] 
 })
 export class AdminAhutorPostComponent {
   constructor(public service: RequestService, public fb: FormBuilder){}
   url:string = enviroments.ahutors.ahutorsPost;
   bool:boolean = false;
   boolSave:boolean = true
-  form!:FormGroup
+  form!:FormGroup;
   data: AhutorPost[] = []
   item!:AhutorPost | undefined
   ngOnInit(): void {

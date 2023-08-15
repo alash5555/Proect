@@ -1,5 +1,7 @@
 
+import { NgFor, NgIf } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { Post } from 'src/app/Models/allPost';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
@@ -7,7 +9,9 @@ import { enviroments } from 'src/enviroments/enviroments';
 @Component({
   selector: 'app-all-ppost',
   templateUrl: './all-ppost.component.html',
-  styleUrls: ['./all-ppost.component.css']
+  styleUrls: ['./all-ppost.component.css'],
+  standalone:true,
+  imports:[RouterLink, NgIf, NgFor]
 })
 export class AllPpostComponent implements OnInit{
   @Input() AllPostInner!: Post;

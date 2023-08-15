@@ -1,14 +1,16 @@
+import { NgFor, NgStyle } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { AboutPost } from 'src/app/Models/aboutPost';
-import { AboutPostComponent } from 'src/app/componet/about-post/about-post.component';
 import { RequestService } from 'src/app/servise/request.service';
 import { enviroments } from 'src/enviroments/enviroments';
 
 @Component({
   selector: 'app-admin-know-next',
   templateUrl: './admin-know-next.component.html',
-  styleUrls: ['./admin-know-next.component.css']
+  styleUrls: ['./admin-know-next.component.css'],
+  standalone:true,
+  imports:[ NgFor, NgStyle, ReactiveFormsModule] 
 })
 export class AdminKnowNextComponent {
   constructor(public service: RequestService, public fb: FormBuilder){}
